@@ -1,10 +1,10 @@
 package es.upm.miw.pd.doo.polymorphism.colecciones.operaciones;
 
-public class Addition extends Operations {
+public class Summation extends Operations {
 
     private static final char OPERATOR = '+';
 
-    public Addition(final int operator1, final int operator2) {
+    public Summation(final int operator1, final int operator2) {
         super(operator1, operator2, OPERATOR);
     }
 
