@@ -28,7 +28,7 @@ public class Operations {
             if (operando != null) {
                 System.out.print(separator + operando.toString());
                 if (operando.getClass().getSimpleName().equals("Addition")) {
-                    result += ((Adittion) operando).sum();
+                    result += ((Summation) operando).sum();
                 } else {
                     result += ((Subtraction) operando).subtract();
                 }

@@ -1,9 +1,9 @@
 package es.upm.miw.pd.doo.polymorphism.colecciones.operaciones;
 
-public class Adittion {
+public class Summation {
     private final int operator1, operator2;
 
-    public Adittion(final int operator1, final int operator2) {
+    public Summation(final int operator1, final int operator2) {
         this.operator1 = operator1;
         this.operator2 = operator2;
     }
