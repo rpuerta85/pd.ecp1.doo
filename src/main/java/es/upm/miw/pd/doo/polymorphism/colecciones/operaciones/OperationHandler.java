@@ -15,10 +15,11 @@ public class OperationHandler {
      operations.clear();
   }
   public int total() {
-      int result=0;
-      for (int i=0;i<operations.size();i++) {
-          result+=operations.operar();
+      int result = 0;
+      for (int i = 0; i < operations.size(); i++) {
+          result += operations.get(i).operar();
       }
+     System.out.print(">>> ");
      return result;
   }
 }
