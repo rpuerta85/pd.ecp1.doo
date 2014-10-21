@@ -8,17 +8,17 @@ import org.junit.Test;
 
 
 public class VehiculoTest {
-    private Vehiculo vehiculo;
+    private Vehiculo coche;
     private static final String DESCRIPCION = "Ford Escort 2.0 16v";
     private static final int ID = 1;
     @Before
     public void ini() {
-        vehiculo = new Vehiculo(ID,DESCRIPCION);
+        coche = new Coche(ID,DESCRIPCION);
     }
 
     @Test
     public void testVehiculo() {
-        assertEquals(vehiculo.getId(),ID,0.0001);
-        assertEquals(vehiculo.getDescripcion(),DESCRIPCION); 
+        assertEquals(coche.getId(),ID,0.0001);
+        assertEquals(coche.getDescripcion(),DESCRIPCION); 
     }
 }
