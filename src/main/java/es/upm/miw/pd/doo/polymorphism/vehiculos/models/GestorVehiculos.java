@@ -1,43 +1,43 @@
 package es.upm.miw.pd.doo.polymorphism.vehiculos.models;
 
-import java.util.ArrayList;
+
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class GestorVehiculos {
-    private static  GestorVehiculos singleton = null;
-    private List<Vehiculo> vehiculos = new ArrayList<Vehiculo>();
+    private static  GestorVehiculos gestorVehiculos = null;
+    private Map<Integer,Vehiculo> vehiculos = new HashMap<Integer,Vehiculo>();
     
     private GestorVehiculos() {
         
     }
     
     public static GestorVehiculos getGestorVehiculos(){
-        if(singleton == null) {
-            singleton = new GestorVehiculos();
+        if(gestorVehiculos == null) {
+            gestorVehiculos = new GestorVehiculos();
         }
-    return singleton;
+    return gestorVehiculos;
     }
 
     public void insertar(Vehiculo coche) {
-        // TODO Auto-generated method stub
-        
+           vehiculos.put(coche.getId(), coche);
     }
+    
 
     public Vehiculo buscar(Vehiculo coche) {
-        // TODO Auto-generated method stub
-        return null;
+        return vehiculos.get(coche.getId());
     }
 
-    public Vehiculo actualizar(Vehiculo coche) {
-        // TODO Auto-generated method stub
-        return null;
+    public void actualizar(Vehiculo coche) {
+        vehiculos.put(coche.getId(), coche);
     }
 
     public void eliminar(Vehiculo coche) {
-        // TODO Auto-generated method stub
+        vehiculos.remove(coche.getId());
         
     }
 
-
+   
 
 }

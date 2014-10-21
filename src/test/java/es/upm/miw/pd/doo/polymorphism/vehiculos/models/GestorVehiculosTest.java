@@ -43,9 +43,10 @@ public class GestorVehiculosTest {
     public void testActualizar() {
         String nuevaDescripcion = coche.getDescripcion()+ "110 CV";
         coche.setDescripcion(nuevaDescripcion);    
-        assertEquals(gestorVehiculos.actualizar(coche).getDescripcion(), nuevaDescripcion);
-        assertEquals(gestorVehiculos.actualizar(coche).getId(), coche.getId());
-        assertEquals(gestorVehiculos.actualizar(coche), coche);
+        gestorVehiculos.actualizar(coche);
+        assertEquals(gestorVehiculos.buscar(coche).getDescripcion(), nuevaDescripcion);
+        assertEquals(gestorVehiculos.buscar(coche).getId(), coche.getId());
+        assertEquals(gestorVehiculos.buscar(coche), coche);
     }
     @Test
     public void testEliminar() {

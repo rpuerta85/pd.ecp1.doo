@@ -24,5 +24,5 @@ public class Vehiculo {
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
-
+  
 }
