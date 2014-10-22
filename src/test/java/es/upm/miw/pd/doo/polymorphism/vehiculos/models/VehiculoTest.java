@@ -31,8 +31,6 @@ public class VehiculoTest {
         assertEquals(cocheA.calcularPrecio(NUMDIAS),92,0.00001);
         assertEquals(cocheC.calcularPrecio(NUMDIAS),46,0.00001);
 
-        
-  
     }
     
 }
