@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class GestorVehiculos {
     private static  GestorVehiculos gestorVehiculos = null;
-    private Map<String,Vehiculo> vehiculos = new HashMap<String,Vehiculo>();
+    private Map<Integer,Vehiculo> vehiculos = new HashMap<Integer,Vehiculo>();
     
     private GestorVehiculos() {
         
@@ -18,8 +18,8 @@ public class GestorVehiculos {
     return gestorVehiculos;
     }
 
-      public void insertar(Orden orden) {
-           vehiculos.put(orden.name(), orden);
+      public void insertar(Vehiculo vehiculo) {
+           vehiculos.put(new Integer(vehiculo.getId()), vehiculo);
     }
     
 
