@@ -2,20 +2,19 @@ package es.upm.miw.pd.doo.polymorphism.vehiculos.models;
 
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
-public class GestorAlquilerVehiculos {
-    private static  GestorAlquilerVehiculos gestorVehiculos = null;
+public class GestorAlquiler {
+    private static  GestorAlquiler gestorVehiculos = null;
     private Map<String,Orden> vehiculos = new HashMap<String,Orden>();
     
-    private GestorAlquilerVehiculos() {
+    private GestorAlquiler() {
         
     }
     
-    public static GestorAlquilerVehiculos getGestorVehiculos(){
-        if(gestorVehiculos == null) {
-            gestorVehiculos = new GestorAlquilerVehiculos();
+    public static GestorAlquiler getGestorAlquiler(){
+        if (gestorVehiculos == null) {
+            gestorVehiculos = new GestorAlquiler();
         }
     return gestorVehiculos;
     }
