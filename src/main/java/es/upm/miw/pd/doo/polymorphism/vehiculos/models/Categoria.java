@@ -8,6 +8,7 @@ public abstract class Categoria {
 
     public Categoria(String nombre,float precio) {
         this.nombre = nombre;
+        this.precio = precio;
     }
 
     public String getNombre() {
@@ -19,7 +20,7 @@ public abstract class Categoria {
     }
     
    
-    protected float calcularPrecio(int numDias, Vehiculo vehiculo) {
+   /* protected float calcularPrecio(int numDias, Vehiculo vehiculo) {
         float precioFinal = 0;
         for (int i = 1; i <= numDias; i++) {
             if(i >= 1 && i <= 3) {
@@ -31,5 +32,5 @@ public abstract class Categoria {
             }
         }
     return precioFinal;
-    }
+    }*/
 }
