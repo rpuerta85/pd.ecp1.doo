@@ -8,17 +8,31 @@ import org.junit.Test;
 
 
 public class VehiculoTest {
-    private Vehiculo coche;
+    private Vehiculo cocheB,cocheA,cocheC;
     private static final String DESCRIPCION = "Ford Escort 2.0 16v";
     private static final int ID = 1;
+    private static final int NUMDIAS = 5;
     @Before
     public void ini() {
-        coche = new Coche(ID,DESCRIPCION);
+        cocheB = new Coche(ID,DESCRIPCION, new CategoriaB());
+        cocheA = new Coche(ID,DESCRIPCION, new CategoriaA());
+        cocheC = new Coche(ID,DESCRIPCION, new CategoriaC());
     }
 
     @Test
     public void testVehiculo() {
-        assertEquals(coche.getId(),ID,0.0001);
-        assertEquals(coche.getDescripcion(),DESCRIPCION); 
+        assertEquals(cocheB.getId(),ID,0.0001);
+        assertEquals(cocheB.getDescripcion(),DESCRIPCION); 
     }
+    @Test
+    public void testCalcularPrecioCoche() {
+      
+        assertEquals(cocheB.calcularPrecio(NUMDIAS),69,0.00001);
+        assertEquals(cocheA.calcularPrecio(NUMDIAS),92,0.00001);
+        assertEquals(cocheC.calcularPrecio(NUMDIAS),46,0.00001);
+
+        
+  
+    }
+    
 }
