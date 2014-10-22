@@ -5,8 +5,7 @@ import upm.jbb.IO;
 
 
 public class GestionAlquilerApp {
-    //private GestorVehiculos gestorVehiculos = GestorVehiculos.getGestorVehiculos();
-    //private GestorAlquiler gestorAlquilar = GestorAlquiler.getGestorAlquiler();
+   
     private float precio = 0;
     
     public GestionAlquilerApp() {
