@@ -1,11 +1,13 @@
 package es.upm.miw.pd.doo.polymorphism.vehiculos.models;
 
+import es.upm.miw.pd.doo.polymorphism.vehiculos.controllers.GestionAlquilerApp;
+
 public abstract class OrdenAbs implements Orden {
     private String nombre;
-    protected MainGestorAlquilerApp receptor;
+    protected GestionAlquilerApp receptor;
     
     
-    public OrdenAbs (String nombre,MainGestorAlquilerApp receptor) {
+    public OrdenAbs (String nombre,GestionAlquilerApp receptor) {
         this.nombre = nombre;
         this.receptor = receptor;
     }

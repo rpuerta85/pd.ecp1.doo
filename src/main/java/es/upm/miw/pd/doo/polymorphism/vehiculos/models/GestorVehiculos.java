@@ -23,8 +23,8 @@ public class GestorVehiculos {
     }
     
 
-    public Vehiculo buscar(Vehiculo vehiculo) {
-        return vehiculos.get(vehiculo.getId());
+    public Vehiculo buscar(int idVehiculo) {
+        return vehiculos.get(idVehiculo);
     }
 
     public void actualizar(Vehiculo vehiculo) {
