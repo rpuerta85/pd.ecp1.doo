@@ -11,17 +11,13 @@ public class GestionAlquilerApp {
     
     public GestionAlquilerApp() {
   
-       /* gestorVehiculos.insertar(new Coche(1, "Ford Fiesta", new CategoriaB()));
-        gestorVehiculos.insertar(new Coche(2, "Mercedes", new CategoriaA()));
-        gestorVehiculos.insertar(new Coche(3, "Dacia Logan", new CategoriaC()));
-        
-        gestorAlquilar.insertar(new ComandoAlquilar(this));MAIN*/
-        
-        
     }
     public void alquilar(float precioAlquiler) {
         IO.in.println("El precio del alquiler es: "+ precioAlquiler);
         
+    }
+    public void imprimir(String result) {
+        IO.in.println("Coches disponibles: \n"+ result);
     }
    
 

@@ -29,6 +29,7 @@ public class Main {
     
         
         gestorAlquilar.insertar(new ComandoAlquilar(gestionAlquilerApp));
+        gestorAlquilar.insertar(new ComandoImprimir(gestionAlquilerApp));
         
         
     }

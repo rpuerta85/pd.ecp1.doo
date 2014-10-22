@@ -35,4 +35,9 @@ public class GestorVehiculos {
         vehiculos.remove(vehiculo.getId());
         
     }
+
+    public Map<Integer, Vehiculo> getVehiculos() {
+        return vehiculos;
+    }
+    
 }
